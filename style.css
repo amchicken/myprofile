@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes onLoadPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    animation: ease-in 1s onLoadPage;
+}
+
+h1,h2,h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 48px;
+    margin: -10px 0px;
+    color: white;
+}
+
+
+span {
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo-span {
+    font-size: 3em;
+    padding: 0 6px;
+}
+
+.content-container {
+    background-image: url("profile.jpg");
+    background-repeat: no-repeat;
+    background-color: linear-gradient(90deg, rgba(3,4,9,1) 43%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    overflow: hidden;
+    height: 960px;
+    padding-top: 300px;
+    display: grid;
+    grid-template-areas: 
+    "profile"
+    "skills"
+    "contact";
+}
+
+.container {
+    padding-left: 65%;
+    min-width: 300px;
+
+    /* border: solid white 5px; */
+}
+
+.profile-container {
+    grid-area: profile;
+    /* max-width: 300px; */
+}
+
+.name-container {
+    max-width: 300px;
+}
+
+.skills-container{
+    grid-area: skills;
+}
+
+.contact-container{
+    grid-area: contact;
+}
+
+.fa-adobe:hover {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: linear-gradient(180deg, rgba(255,255,255,1) 73%, rgba(237,28,36,1) 100%);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+        padding-top: 350px;
+        grid-template-areas: 
+        "profile profile"
+        "skills contact";
+    }
+
+    .container {
+        padding-left: 5%;
+        /* border: solid white 5px; */
+    }
+
+    .profile-container {
+        grid-area: profile;
+        padding-left: 60%;
+    }
+
+    .logo-span {
+        font-size: 3em;
+        padding: 0;
+    }
+}
+
+
+
+
