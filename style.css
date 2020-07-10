@@ -40,6 +40,10 @@ h1 {
     color: white;
 }
 
+h3 {
+    font-size: 25px;
+    color: teal;
+}
 
 span {
     color: white;
@@ -51,7 +55,18 @@ a {
 
 .logo-span {
     font-size: 3em;
-    padding: 0 6px;
+    padding: 0 5px;
+}
+
+.name-warp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 350px;
+}
+
+.name {
+    padding: 0 10px;
 }
 
 .content-container {
@@ -78,11 +93,12 @@ a {
 
 .profile-container {
     grid-area: profile;
+    /* border: solid white 5px; */
     /* max-width: 300px; */
 }
 
 .name-container {
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .skills-container{
@@ -93,13 +109,17 @@ a {
     grid-area: contact;
 }
 
-.fa-adobe:hover {
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: linear-gradient(180deg, rgba(255,255,255,1) 73%, rgba(237,28,36,1) 100%);
+.nickname {
+    font-size: 60px; 
+    padding: 15px; 
+    color: tomato; 
+    text-align: center;
 }
 
+.logo-span:hover {
+    font-size: 3em;
+    color: thistle;
+}
 
 @media only screen and (max-width: 768px) {
     .content-container {
@@ -122,6 +142,39 @@ a {
     .logo-span {
         font-size: 3em;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .name-warp{
+        justify-content: left;
+    }
+
+    .nickname {
+        text-align: left;
+    }
+
+    .content-container {
+        padding-top: 320px;
+        grid-template-areas: 
+        "profile"
+        "skills"
+        "contact";
+    }
+
+    .container {
+        padding-left: 8%;
+        /* border: solid red 5px; */
+        text-align: left;
+    }
+
+    .logo-span {
+        font-size: 3em;
+        padding: 0;
+    }
+
+    .contact-container {
+        margin-top: -20px;
     }
 }
 
