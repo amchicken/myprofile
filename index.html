@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>630615037</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 <body>
@@ -19,7 +20,7 @@
                         <h1>KHAMON</h1>
                     </div>
                 </div>
-                <h2 class="nickname">'RANG'</h2>
+                <h2 class="nickname animate__animated animate__fadeInUp animate__delay-1s">'RANG'</h2>
             </div>
             <div style="margin-top: -10px;">
                 <h3>AKA</h3>
@@ -42,21 +43,25 @@
         </div>
         <div class="skills-container container">
             <h2>Skills</h2>
-            <span class="logo-span" onclick="adobe()">
-                <i class="fab fa-adobe"></i>
-            </span>
-            <span class="logo-span">
-                <i class="fab fa-html5"></i>
-            </span>
-            <div style="display: none; position: absolute;" id="">slkdfj</div>
-            <span class="logo-span">
-                <i class="fab fa-css3-alt"></i>
-            </span>
-            <span class="logo-span">
-                <i class="fab fa-js"></i>
-            </span>
-
-            <div style="display: none;position: absolute; top: 40px; background: firebrick; height: 55px; width: 80%;"  id="adobe" onclick="adobe()">Adobe</div>
+            <div>
+                <span class="logo-span">
+                    <i class="fab fa-adobe"></i>
+                </span>
+                <span class="logo-span">
+                    <i class="fab fa-html5"></i>
+                </span>
+                <span class="logo-span">
+                    <i class="fab fa-css3-alt"></i>
+                </span>
+                <span class="logo-span">
+                    <i class="fab fa-js"></i>
+                </span>
+                <!-- <div class="skills-popup" id="adobe" onclick="adobe()">
+                    Adobe
+                </div> -->
+            </div>
+            
+            
         </div>
         <div class="contact-container container">
             <h2>Contact</h2>
@@ -77,6 +82,7 @@
             </a>    
         </div>
     </div>
+    
 
     <script>
         function adobe() {

@@ -66,6 +66,10 @@ a {
     max-width: 350px;
 }
 
+.skills-popup {
+    display: none;position: absolute; top: 40px; background: firebrick; height: 55px; width: 270px;
+}
+
 i:hover {
     background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),             
     rgb(21, 198, 251)) 0% 0% / 300% 300%;
